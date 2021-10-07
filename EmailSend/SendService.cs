@@ -43,7 +43,7 @@ namespace EmailSend
                     client.AuthenticationMechanisms.Remove("XOAUTH2");
 
        
-                    await client.AuthenticateAsync("Your_password_from_gmail","Your_Password");
+                    await client.AuthenticateAsync("Your_login_from_gmail","Your_Password");
                     await client.SendAsync(emailMessage);
                     await client.DisconnectAsync(true);
                 }
